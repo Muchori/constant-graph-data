@@ -36,13 +36,3 @@ Next state:
 
 Get Path Bulk
 `http://localhost:3000/transition/bulk/1,2,3,4,5/R,A,S`
-
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
