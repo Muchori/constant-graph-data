@@ -1,5 +1,4 @@
 import { Injectable } from '@nestjs/common';
-import { Graph } from '../graph';
 
 @Injectable()
 export class TransitionService {
@@ -16,7 +15,10 @@ export class TransitionService {
     },
     4: {
       2: ['R', 'P', 'S'],
-      5: ['R', 'A', 'S'],
+      5: [
+        ['R', 'A', 'S'],
+        ['R', 'P', 'B'],
+      ],
     },
     5: {
       1: ['R', 'A', 'S'],
