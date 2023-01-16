@@ -27,9 +27,16 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
+## Example 
 
-```bash
+After running the server locally, you can `getNextState` and `getPathForBulk` by:
+ 
+Next state:
+`http://localhost:3000/transition/1,2/S,A,S`
+
+Get Path Bulk
+`http://localhost:3000/transition/bulk/1,2,3,4,5/R,A,S`
+
 # unit tests
 $ npm run test
 
