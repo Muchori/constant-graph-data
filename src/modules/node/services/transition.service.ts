@@ -1,15 +1,26 @@
 import { Injectable } from '@nestjs/common';
+import { Graph } from '../graph';
 
 @Injectable()
 export class TransitionService {
+  //private readonly graph: Graph;
   private graph = {
     1: {
       2: ['S', 'A', 'S'],
-      3: ['R', 'U', 'B'],
     },
     2: {
-      4: ['S', 'P', 'B'],
-      5: ['R', 'C', 'S'],
+      3: ['S', 'P', 'S'],
+    },
+    3: {
+      4: ['R', 'U', 'S'],
+    },
+    4: {
+      2: ['R', 'P', 'S'],
+      5: ['R', 'A', 'S'],
+    },
+    5: {
+      1: ['R', 'A', 'S'],
+      2: ['R', 'P', 'S'],
     },
     // more states and transitions...
   };
